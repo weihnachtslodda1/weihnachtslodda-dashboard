@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -6,8 +7,11 @@
       content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#12213a">
 <title>Weihnachtslodda</title>
+
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -18,7 +22,7 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg,#14243f,#274d75);
+  background: linear-gradient(135deg, #14243f, #274d75);
   color: white;
   padding: 34px 20px 45px;
   text-align: center;
@@ -75,6 +79,14 @@ main {
   text-decoration: none;
   color: inherit;
   box-shadow: 0 3px 14px #14243f0b;
+}
+
+a.kachel {
+  cursor: pointer;
+}
+
+a.kachel:active {
+  background: #eaf2fc;
 }
 
 .symbol {
@@ -137,15 +149,16 @@ footer {
   <div class="info">
     <strong>Willkommen bei Weihnachtslodda!</strong>
     <p>
-      Hier entsteht deine zentrale Übersicht für
-      Gewinnspiele und Teilnahmen.
-      Die Suche läuft bereits automatisch.
+      Hier findest du deine zentrale Übersicht
+      für Gewinnspiele und Teilnahmen.
+      Die Instagram-Suche läuft bereits täglich.
     </p>
   </div>
 
   <div class="kacheln">
 
-    <div class="kachel">
+    <!-- INSTAGRAM: JETZT ANKLICKBAR -->
+    <a class="kachel" href="instagram_uebersicht.html">
       <div class="symbol">📸</div>
       <h2>Instagram-Gewinnspiele</h2>
       <p>
@@ -157,8 +170,9 @@ footer {
       <span class="status aktiv">
         Suche läuft täglich
       </span>
-    </div>
+    </a>
 
+    <!-- AUTOMATISCHE TEILNAHME -->
     <div class="kachel">
       <div class="symbol">🤖</div>
       <h2>Automatische Teilnahme</h2>
@@ -172,6 +186,7 @@ footer {
       </span>
     </div>
 
+    <!-- MANUELLE TEILNAHME -->
     <div class="kachel">
       <div class="symbol">✍️</div>
       <h2>Manuelle Teilnahme</h2>
@@ -185,6 +200,7 @@ footer {
       </span>
     </div>
 
+    <!-- TEILNAHMEHISTORIE -->
     <div class="kachel">
       <div class="symbol">📋</div>
       <h2>Teilnahmehistorie</h2>
