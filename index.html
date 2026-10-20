@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12213a">
+<title>Weihnachtslodda</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Segoe UI", sans-serif;
+  background: #f3f6fb;
+  color: #17253c;
+}
+
+header {
+  background: linear-gradient(135deg,#14243f,#274d75);
+  color: white;
+  padding: 34px 20px 45px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 29px;
+  margin: 0 0 8px;
+}
+
+header p {
+  margin: 0;
+  color: #dce8f8;
+}
+
+main {
+  max-width: 680px;
+  margin: -19px auto 0;
+  padding: 0 18px 40px;
+}
+
+.info {
+  background: white;
+  border-radius: 16px;
+  padding: 17px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 14px #14243f10;
+}
+
+.info strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.info p {
+  color: #627086;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.kacheln {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.kachel {
+  display: block;
+  background: white;
+  border: 1px solid #e0e7ef;
+  border-radius: 18px;
+  padding: 22px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 3px 14px #14243f0b;
+}
+
+.symbol {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.kachel h2 {
+  font-size: 19px;
+  margin: 0 0 8px;
+}
+
+.kachel p {
+  color: #627086;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.status {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 6px 11px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #e9eef6;
+  color: #3f5877;
+}
+
+.aktiv {
+  background: #e3f3e9;
+  color: #176a3d;
+}
+
+footer {
+  text-align: center;
+  color: #79869a;
+  font-size: 12px;
+  margin-top: 28px;
+  line-height: 1.6;
+}
+
+@media (min-width: 520px) {
+  .kacheln {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎁 Weihnachtslodda</h1>
+  <p>Dein persönlicher Gewinnspiel-Assistent</p>
+</header>
+
+<main>
+
+  <div class="info">
+    <strong>Willkommen bei Weihnachtslodda!</strong>
+    <p>
+      Hier entsteht deine zentrale Übersicht für
+      Gewinnspiele und Teilnahmen.
+      Die Suche läuft bereits automatisch.
+    </p>
+  </div>
+
+  <div class="kacheln">
+
+    <div class="kachel">
+      <div class="symbol">📸</div>
+      <h2>Instagram-Gewinnspiele</h2>
+      <p>
+        Neue Gewinnspiele entdecken,
+        Teilnahmebedingungen prüfen und
+        Beiträge mit deinem Weihnachtslodda-
+        Konto öffnen.
+      </p>
+      <span class="status aktiv">
+        Suche läuft täglich
+      </span>
+    </div>
+
+    <div class="kachel">
+      <div class="symbol">🤖</div>
+      <h2>Automatische Teilnahme</h2>
+      <p>
+        Geeignete Webseiten-Gewinnspiele
+        künftig selbstständig bearbeiten
+        und Teilnahmen dokumentieren.
+      </p>
+      <span class="status">
+        In Entwicklung
+      </span>
+    </div>
+
+    <div class="kachel">
+      <div class="symbol">✍️</div>
+      <h2>Manuelle Teilnahme</h2>
+      <p>
+        Gewinnspiele verwalten, bei denen
+        du selbst noch eine Aktion
+        durchführen musst.
+      </p>
+      <span class="status">
+        In Vorbereitung
+      </span>
+    </div>
+
+    <div class="kachel">
+      <div class="symbol">📋</div>
+      <h2>Teilnahmehistorie</h2>
+      <p>
+        Später nachvollziehen, an welchen
+        Gewinnspielen du bereits
+        teilgenommen hast.
+      </p>
+      <span class="status">
+        In Vorbereitung
+      </span>
+    </div>
+
+  </div>
+
+  <footer>
+    Weihnachtslodda 4.7<br>
+    Öffentliche Startseite ohne persönliche Daten.<br>
+    Noch keine automatische Teilnahme aktiviert.
+  </footer>
+
+</main>
+
+</body>
+</html>
